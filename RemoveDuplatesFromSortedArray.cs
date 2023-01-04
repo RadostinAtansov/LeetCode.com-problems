@@ -8,11 +8,13 @@ int k = RemoveDuplicates(nums1);
 
 static int RemoveDuplicates(int[] nums)
 {
+
     int i = 1;
     foreach (int n in nums)
     {
-        if (nums[i - 1] != n) nums[i++] = n;
+        if (nums[i - 1] != n) nums[i++] = n; // with in-place algorithm
     }
 
     return i;
+    
 }
