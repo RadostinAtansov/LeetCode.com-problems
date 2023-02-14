@@ -21,30 +21,24 @@ Console.WriteLine(IsPowerOfTwo(n2));
 static bool IsPowerOfTwo(int n)
 {
 
-    if (n <= 0)
-        return false;
-    var val = n & (n - 1);
-    return val == 0 ? true : false;
+	int counter = -1;
+	if (n == 0)
+	{
+		return false;
+	}
+	while (n != 0)
+	{
+		if(n % 2 == 0 || n == 1)
+		{
+			n = n / 2;
+			counter++;
+        }
+		else
+		{
+			return false;
+		}
+		
+	}
 
-    //var result = Math.Pow(n, 2);
-    //int counter = -1;
-    //if (n == 0)
-    //{
-    //	return false;
-    //}
-    //while (n != 0)
-    //{
-    //	if(n % 2 == 0 || n == 1)
-    //	{
-    //		n = n / 2;
-    //		counter++;
-    //       }
-    //	else
-    //	{
-    //		return false;
-    //	}
-
-    //}
-
-    //   return true;
+    return true;
 }
