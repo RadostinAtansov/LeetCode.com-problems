@@ -45,6 +45,4 @@ static bool IsPowerOfFour(int n)
 
     return true;
 
-    //2_147_483_648 is the largest power of 4 under 2^31 - 1
-    //return n > 0 && 2_147_483_648 % n == 0;
 }
