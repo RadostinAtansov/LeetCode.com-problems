@@ -50,4 +50,7 @@ static bool IsPowerOfThree(int n)
 	}
 
     return true;
+				//1 162 261 467 is the largest power of 3 under 2^31 - 1
+	  			//return n > 0 && 1_162_261_467 % n == 0;     ====>>>>>>>>> best solution
+	
 }
