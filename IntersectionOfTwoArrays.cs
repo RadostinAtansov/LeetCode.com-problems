@@ -34,4 +34,23 @@ static int[] Intersection(int[] nums1, int[] nums2)
     var res = result.Distinct();
 
     return res.ToArray();
+    
+    
+    //List<int> result = new List<int>();
+
+    //nums1 = nums1.Distinct().ToArray();
+    //nums2 = nums2.Distinct().ToArray();
+
+    //for (int i = 0; i < nums1.Length; i++)                  =======> faster my solution
+    //{
+    //    int resN = nums1[i];
+    //    if (nums2.Contains(resN))
+    //    {
+    //        result.Add(resN);
+    //    }
+    //}
+
+    //return result.ToArray();
+    
+    
 }
