@@ -3,7 +3,7 @@
 
 //Example 1:
 int[] nums11 = { 1, 2, 2, 1 }, nums21 = { 2, 2 };
-//Output: [2]
+//Output: [2] unique numbers
 
 //Example 2:
 int[] nums12 = { 4, 9, 5 }, nums22 = { 9, 4, 9, 8, 4 };
