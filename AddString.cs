@@ -48,18 +48,6 @@ static string AddStrings(string num1, string num2)
     return String.Join("", c);
 }
 
-static int ConvertStringToInt(string num1)
-{
-    int response = 0;
-    foreach (char c in num1)
-    {
-        response *= 10;
-        response = response + c - '0'; //or -48 same from ascii table
-    }
-
-    return response;
-}
-
 static string CalculateNumbers(string num1, string num2, int n)
 {
 
