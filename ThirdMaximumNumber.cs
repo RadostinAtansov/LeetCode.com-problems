@@ -33,9 +33,8 @@ Console.WriteLine(ThirdMax(nums1));
 
 static int ThirdMax(int[] nums)
 {
-    HashSet<int> set = new HashSet<int>(nums);
-    
-    var distinctSet = set.OrderBy(x => x).ToList();
+    SortedSet<int> set = new SortedSet<int>(nums);  
+    var distinctSet = set.ToList();
 
     if (distinctSet.Count >= 3)
         return distinctSet[distinctSet.Count - 3];
