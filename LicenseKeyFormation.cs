@@ -53,10 +53,6 @@ static string LicenseKeyFormatting(string s, int k)
             }
         }
     }
-    //Example 2:
-    //string s2 = "2-5g-3-J";
-    //int k2 = 2;
-    //Output: "2-5G-3J"
     else
     {
         int counterK = 0;
@@ -85,6 +81,6 @@ static string LicenseKeyFormatting(string s, int k)
         }
         
     }
-    Console.WriteLine(String.Join("", list));
-    return string.Empty;
+   // Console.WriteLine(String.Join("", list));
+    return String.Join("", list);
 }
