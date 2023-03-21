@@ -1,5 +1,5 @@
 ﻿
-
+//string expression convert to int calculate convert to string return string result(words)
 
 
 string str = "foursixminustwotwoplusonezero";
